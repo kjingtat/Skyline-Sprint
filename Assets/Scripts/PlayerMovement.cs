@@ -83,7 +83,7 @@ public class PlayerMovement : MonoBehaviour
 
     void HandleDuck()
     {
-        if ((Input.GetKey(KeyCode.S) && JumpCount == 0)
+        if ((Input.GetKey(KeyCode.S) && JumpCount == 0))
         {
             if (!isDucking)
             {
