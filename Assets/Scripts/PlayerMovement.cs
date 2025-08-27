@@ -19,6 +19,9 @@ public class PlayerMovement : MonoBehaviour
     public float forwardBoost = 1.5f;   
     public float backwardPenalty = 0.5f;
 
+    [Header("Audio")]
+    public AudioSource audioSource;
+
     [Header("References")]
     public Transform graphics;
 
@@ -78,6 +81,11 @@ public class PlayerMovement : MonoBehaviour
             rb.velocity = new Vector2(rb.velocity.x, jumpForce);
             JumpCount++;
             isJumping = true;
+
+            if (audioSource != null)
+            {
+                audioSource.Play(); 
+            }
         }
     }
 

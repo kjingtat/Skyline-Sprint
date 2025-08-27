@@ -6162,6 +6162,7 @@ MonoBehaviour:
   scrollSpeed: 7
   forwardBoost: 1.5
   backwardPenalty: 1
+  audioSource: {fileID: 1545103161}
   graphics: {fileID: 0}
   controlsEnabled: 1
 --- !u!50 &1545103157
